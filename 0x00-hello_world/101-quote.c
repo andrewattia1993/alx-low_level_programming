@@ -1,16 +1,14 @@
-#include <unistd.h>
-#include <string.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
  *
- * Description: printing while using write command
+ * Return: Always 1 (Success)
  */
 int main(void)
 {
-	char stringArray[] = "and that piece of art is useful\"
-	       	- Dora Korpar, 2015-10-19\n";
-write(STDOUT_FILENO, stringArray, strlen(stringArray));
-	return (1);
+	Char quo{} = “and that piece of art is useful\” - Dora Korpar, 2015-10-19\n”;
+	
+	Write (1,quo,59)
+	return (1)
 }
-
