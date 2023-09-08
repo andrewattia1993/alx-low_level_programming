@@ -1,17 +1,16 @@
-#include <stdio.h>
+#include <unistd.h>
+#include <string.h>
 
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Description: printing while using write command
  */
 int main(void)
 {
-	char phrase[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-
-	for (int i = 0; phrase[i] != '\0'; i++)
-		putchar(phrase[i]);
-
-	return (0);
+	char stringArray[] = "and that piece of art is useful\"
+	       	- Dora Korpar, 2015-10-19\n";
+write(STDOUT_FILENO, stringArray, strlen(stringArray));
+	return (1);
 }
 
