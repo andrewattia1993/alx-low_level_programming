@@ -1,22 +1,18 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/**
- * main - Entry point
- * descreption: alphabet
- * Return: Always 0 (Success)
- */
 
 int main(void)
 {
-	int a = 0;
+    int a = 0;
 
-	while (a < 10)
-	{
-	  printf("%d" ,a);
-		a++;
-	}
+    while (a < 10)
+    {
+        printf("%d", a);
+        a++;
+    }
 
-	printf("\n");
-	return (0);
+    printf("\n");
+    return (0);
 }
+
