@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+/**
+ *main - prints the alphabet in lowercase,
+ *followed by a new line
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int n;
+	char ch;
+
+	ch = 'a';
+	n = 48
+	while (n <=59)
+	{
+		putchar(n)
+		n++
+	}
+	while (ch <= 'f')
+	{
+		putchar(ch);
+		ch++;
+	}
+	putchar('\n');
+	return (0);
+}
