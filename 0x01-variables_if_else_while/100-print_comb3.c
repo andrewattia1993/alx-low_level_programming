@@ -20,8 +20,8 @@ int main(void)
 				putchar (digit2 + 48);
 				if (digit1 + digit2 != 17)
 				{
-					putchar (' ');
 					putchar (',');
+					putchar (' ');
 				}
 			}
 			digit2++;
