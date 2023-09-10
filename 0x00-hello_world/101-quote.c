@@ -13,7 +13,7 @@ int main(void)
 	while (quo[i] != '\0')
 	{
 		putchar(quo[i]);
-		i++
+		i++;
 	}
 	return (1);
 }
