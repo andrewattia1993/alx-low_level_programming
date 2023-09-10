@@ -8,7 +8,12 @@
 int main(void)
 {
 	char quo[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	int i = 0;
 
-	fwrite(1, quo, 59);
+	while (quo[i] != '\0')
+	{
+		putchar(quo[i]);
+		i++
+	}
 	return (1);
 }
