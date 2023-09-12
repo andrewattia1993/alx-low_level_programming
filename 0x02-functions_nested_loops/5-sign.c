@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_sign - print signs according to number value
  * Return: 1 if n is greater than zero,
