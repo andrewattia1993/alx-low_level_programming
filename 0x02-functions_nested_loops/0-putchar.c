@@ -1,12 +1,17 @@
-#include <unistd.h>
-#include "main.h"
+include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * main - Entry point
+ * from 0 to 10
+ * Return: Always 0 (Success)
  */
-int _putchar(char c)
+int main(void)
 {
-    return (write(1, &c, 1));
+	char str[] = "_putchar";
+	int ch;
+	for (ch = 0, ch < 8 ; ch++)
+		_putchar(str[ch]);
+	_putchar('\n');
+
+	return (0);
 }
