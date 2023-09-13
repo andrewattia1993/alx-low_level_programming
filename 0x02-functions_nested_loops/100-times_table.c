@@ -4,6 +4,7 @@
  * times_table - Entry point
  * @n: input of an int
  */
+
 void times_table(int n)
 {
 	int v, t, e;
