@@ -2,30 +2,40 @@
 
 /**
  * times_table - Entry point
+ * @n: input of an int
  */
-void times_table(void)
+void times_table(int n)
 {
-	int n, t, e;
+	int v, t, e;
 
-	for (n = 0; n <= 15; n++)
+	if (n <= 15 && n >= 0)
 	{
-		_putchar(48);
-		for (t = 1; t <= 15; t++)
+		for (v = 0; v <= 15; v++)
 		{
-			_putchar(',');
-			_putchar(' ');
-			e = n * t;
-			if (e <= 9)
+			_putchar(48);
+			for (t = 1; t <= n; t++)
 			{
+				_putchar(',');
 				_putchar(' ');
-				_putchar(e + '0');
-			}
-			else
-			{
-				_putchar(e / 10 + '0');
+				e = v * t;
+				if (e <= 9)
+				{
+					_putchar(' ');
+				}
+				if (e <= 99)
+				{
+					_putchar(' ');
+				}
+				if (e <= 100)
+				{
+					_putchar((e / 100) + '0');
+					_putchar((e / 10) + '0'0;
+				}
+				else if (e <= 99 && e >= 9)
+					_putchar(e / 10 + '0');
 				_putchar(e % 10 + '0');
 			}
+			_putchar ('\n');
 		}
-		_putchar ('\n');
 	}
 }
