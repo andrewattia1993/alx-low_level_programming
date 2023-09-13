@@ -1,11 +1,11 @@
 include "main.h"
 
-\*
- * add - function to add
- * @int : is an integer input
- * @int : is an intger input
- *\
-
- int add(int, int);
- {
- 	
+/**
+ * add - function that adds
+ * @a: int input
+ * @b: int input
+ */
+int add(int a, int b)
+{
+	return (a + b);
+}
