@@ -14,7 +14,8 @@ void times_table(void)
 			_putchar((n * m) + '0');
 			_putchar((',') + '0');
 			_putchar(' ');
+			_putchar('\n');
 		}
-		_putchar('\n');
+		
 	}
 }
