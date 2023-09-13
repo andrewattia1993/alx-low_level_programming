@@ -31,10 +31,11 @@ void print_times_table(int n)
 				{
 					_putchar((e / 100) + '0');
 					_putchar((e / 10) + '0');
+					_putchar((e % 10) =+ '0');
 				}
 				else if (e <= 99 && e >= 9)
 					_putchar(e / 10 + '0');
-				_putchar(e % 10 + '0');
+					_putchar(e % 10 + '0');
 			}
 			_putchar ('\n');
 		}
