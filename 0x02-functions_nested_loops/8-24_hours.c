@@ -2,28 +2,21 @@
 
 /**
  * jack_bauer - Entry point
- * from 0 to 10
- * @n : intger represtents the numbers in time 
- * Return: Always 0 (Success)
  */
-void jack_bauer(void n)
+void jack_bauer(void)
 {
+	int hour, min;
 
-	for (n = '0'; n <= '2'; n++)
+	for (hour = 0; hour <= 23; hour++)
 	{
-		_putchar(n);
-		for (n = '0'; n <= '3'; n++)
+		for (min = 0; min <= 59; min++)
 		{
-			_putchar(n);
-			for (n = '0'; n <= '6'; n++)
-			{
-				_putchar(n);
-				for (n = '0'; n <= '9'; n++)
-				{
-					_putchar(n);
-				}
-			}	
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':')
+			_putchar((min / 10) + '0');
+			_putchar((min % 10) + '0');
+			_putchar('\n');
 		}
-	_putchar ('\n')
 	}
 }
