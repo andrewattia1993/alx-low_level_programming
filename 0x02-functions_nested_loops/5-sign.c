@@ -17,7 +17,7 @@ int print_sign(int n)
 	else if (n == 0)
 	{
 		printf("0");
-		return (o);
+		return (0);
 	}
 	else if (n < 0)
 	{
