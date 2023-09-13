@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * times_table - Entry point
+ * print_times_table - Entry point
  * @n: input of an int
  */
 
-void times_table(int n)
+void print_times_table(int n);
 {
 	int v, t, e;
 
@@ -30,7 +30,7 @@ void times_table(int n)
 				if (e <= 100)
 				{
 					_putchar((e / 100) + '0');
-					_putchar((e / 10) + '0'0;
+					_putchar((e / 10) + '0');
 				}
 				else if (e <= 99 && e >= 9)
 					_putchar(e / 10 + '0');
