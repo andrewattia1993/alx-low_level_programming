@@ -5,7 +5,7 @@
  * @n: the int to check
  * Return: is zero if successful
  */
-int print_last_digit(int n);
+int print_last_digit(int n)
 {
 	n = n % 10;
 	_putchar('n');
