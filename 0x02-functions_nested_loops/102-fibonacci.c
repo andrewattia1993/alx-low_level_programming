@@ -9,22 +9,23 @@
 
 int main(void)
 {
-	int count;
-	unsigned long a, b, e;
+	unsigned long count, i, j, k;
+
+	i = 0;
+	j = 1;
 
 	for (count = 0; count < 50; count++)
 	{
-		e = a + b;
-		printf("%lu", e);
-
-		a = b;
-		b = e;
-
-		if (count <= 49)
-			printf("\n");
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%lu", k);
+		if (count == 49)
+			putchar('\n');
 		else
+		{
 			printf(", ");
+		}
 	}
 	return (0);
 }
-
