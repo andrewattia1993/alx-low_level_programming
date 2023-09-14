@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * _isupper - check the code.
- * @c : a character either upper or lower case
+ * print_most_numbers - check the code.
+ *
  * Return: Always 0.
  */
 void print_most_numbers(void)
