@@ -23,21 +23,20 @@ void print_times_table(int n)
 				if (e <= 9)
 				{
 					_putchar(' ');
+					_putchar(' ');
+					_putchar(e + '0');
 				}
-				if (e <= 99)
+				else if (e <= 99)
 				{
 					_putchar(' ');
+					_putchar((e / 10) + '0');
+					_putchar((e % 10) + '0');
 				}
-				if (e <= 100)
+				else
 				{
 					_putchar((e / 100) + '0');
 					_putchar((e / 10) + '0');
 					_putchar((e % 10) + '0');
-				}
-				else if (e <= 99 && e >= 9)
-				{
-					_putchar(e / 10 + '0');
-					_putchar(e % 10 + '0');
 				}
 			}
 			_putchar ('\n');
