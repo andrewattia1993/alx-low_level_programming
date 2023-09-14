@@ -18,6 +18,7 @@ void print_times_table(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
+
 				e = v * t;
 				if (e <= 9)
 				{
