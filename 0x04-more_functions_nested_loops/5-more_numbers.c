@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * more_numbers - check the code.
- *
- * Return: Always 0.
+ * more_numbers - prints the range 0-14 ten times.
+ * Return: nothing.
  */
 
 void more_numbers(void)
