@@ -21,7 +21,7 @@ int main(void)
 		b = e;
 
 		if (count <= 49)
-			printf("/n");
+			printf("\n");
 		else
 			printf(", ");
 	}
