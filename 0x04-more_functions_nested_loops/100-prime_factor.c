@@ -1,31 +1,36 @@
 #include <stdio.h>
-#include <math.h>
 
 /**
- * print_diagonal - draws a diagonal line across (n) terminal lines.
- * @n: the number of lines to print
+ * main - draws a diagonal line across (n) terminal lines.
+ * Return: zero is the return
  */
 
 int main(void)
- {
- 	int n, i;
+{
+	int i, c;
 
- 	while (n % 2 == 0)
+	long int n = 612852475143;
+
+	while (n % 2 == 0)
 	{
-		printf("2");
+		c = 2;
 		n = n / 2;
 	}
-	for (i = 3; i <= sqt(n); i = i + 2)
+	for (i = 3; i * i <= n; i = i + 2)
 	{
 		while (n % i == 0)
 		{
-			printf("%d", i);
+			c = i;
 			n = n / i;
 		}
 	}
 	if (n > 2)
 	{
-		printf("%d", n);
+		printf("%ld\n", n);
+	}
+	else
+	{
+		printf("%d\n", c);
 	}
 	return (0);
 }
