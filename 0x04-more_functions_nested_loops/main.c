@@ -3,5 +3,5 @@
 int main (void)
 {
 	print_line()
-	return 0;
+	return (0);
 }
