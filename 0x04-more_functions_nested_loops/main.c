@@ -2,6 +2,6 @@
 
 int main (void)
 {
-	print_diagonal(333);
+	print_number(333);
 	return (0);
 }
