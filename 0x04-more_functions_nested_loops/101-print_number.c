@@ -4,7 +4,6 @@
  * print_number - check the code.
  * @n: intger
  */
-
 void print_number(int n)
 {
 	unsigned int num = n;
