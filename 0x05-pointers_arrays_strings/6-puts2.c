@@ -8,7 +8,7 @@
 
 void puts2(char *str)
 {
-	char c;
+	int c;
 
 	for (c = 0; str[c] != '\0'; c++)
 	{
