@@ -8,11 +8,10 @@
 
 void rev_string(char *s)
 {
-	int l,i;
+	int l, i;
 
-	//get the length of the string
 	for (l = 0; s[l] != '\0'; l++)
 		;
-	for (i = l; i > 0; i--)
+	for (i = l - 1; i >= 0; i--)
 		_putchar(s[i] + 0);
 }
