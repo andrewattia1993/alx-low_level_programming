@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - check the code.
+ * puts_half - check the code.
  * @str : string
  * Return: Always 0.
  */
@@ -13,9 +13,19 @@ void puts_half(char *str)
 	for (l = 0; str[l] != '\0'; l++)
 		;
 
-	for (i = l / 2; str[i] != '\0'; i++)
+	if (l % 2 ==  0)
 	{
-		_putchar(str[i]);
+		for (i = l / 2; str[i] != '\0'; i++)
+		{
+			_putchar(str[i]);
+		}
+	}
+	else
+	{
+		for (i = (l - 1) / 2; str[i] != '\0'; i++)
+		{
+			_putchar(str[i]);
+		}
 	}
 	_putchar('\n');
 }
