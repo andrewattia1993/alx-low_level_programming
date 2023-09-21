@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _strcat - function that is replica to starcat
+ * _strcat - concatenates two strings
  * @dest  : array
  * @src : array
+ * return : char dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -11,19 +12,12 @@ char *_strcat(char *dest, char *src)
 	int a, b;
 
 	a = 0;
-	b = 0;
 
-	while (dest[a] != '\0')
-		i++;
-
-	while (src[b] != '\0')
-	{
-		dest[a] = src[b];
-		b++;
+	while (dest[a])
 		a++;
-	}
 
-	dest[a] = '\0';
+	for (b = 0; src[b]; b++)
+		dest[a++] = src[b];
 
 	return (dest);
 }
