@@ -10,8 +10,8 @@ char *leet(char *str)
 {
 	int a, b;
 
-	char *x = "aAeEoOtTlL"
-	char *z = "4433007711"
+	char *x = "aAeEoOtTlL";
+	char *z = "4433007711";
 
 	for (a = 0; str[a] != '\0'; a++)
 	{
