@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings
+ * _strncpy - concatenates two strings
  * @dest  : array
  * @src : array
  * @n : int
  * Return: a pointer to the resulting string
  **/
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int a, b;
 
