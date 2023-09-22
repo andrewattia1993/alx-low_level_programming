@@ -6,7 +6,8 @@
  * @src : array
  * @n : int
  * Return: a pointer to the resulting string
-*/
+ **/
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int a, b;
