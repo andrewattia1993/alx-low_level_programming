@@ -20,10 +20,10 @@ int lower(char c)
 int isdelimiter(char c)
 {
 	int i;
-	char delimiter[] = ",;.!?\"\n\t(){}"
+	char delimiter[] = ",;.!?\"\n\t(){}";
 
 	for (i = 0; i < 12; i++)
-	{
+	{	
 		if (c == delimiter[i])
 			return (1);
 	}
@@ -44,7 +44,7 @@ char *cap_string(char *s)
 	while (*s)
 	{
 		if (isdelimiter(*s))
-			founddeleimit = 1;
+			founddelimit = 1;
 		else if (lower(*s) && founddelimit)
 		{
 			*s -= 32;
@@ -56,14 +56,3 @@ char *cap_string(char *s)
 	}
 	return (p);
 }
-
-
-
-
-
-
-
-
-
-
-
