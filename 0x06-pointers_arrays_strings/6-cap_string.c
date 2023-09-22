@@ -6,14 +6,14 @@
  * Return: a pointer to the resulting string
  **/
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int l, j;
 
 	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
 		'!', '?', '"', '(', ')', '{', '}'};
 
-	for (l = 0; s[i] != '\0'; l++)
+	for (l = 0; s[l] != '\0'; l++)
 	{
 		if (l == 0 && s[l] >= 'a' && s[l] <= 'z')
 			s[l] -= 32;
