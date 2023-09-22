@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - concatenates two strings
- * @*str  : array
+ * @str  : array
  * Return: a pointer to the resulting string
  **/
 
