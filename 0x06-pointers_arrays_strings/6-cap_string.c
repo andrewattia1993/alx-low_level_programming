@@ -19,7 +19,7 @@ char *cap_string(char *s)
 		{
 			s[a] -= 32;
 		}
-		for (b = 0; str[b] < 13; b++)
+		for (b = 0; b < 13; b++)
 		{
 			if (s[a] == str[b])
 			{
