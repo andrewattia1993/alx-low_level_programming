@@ -6,22 +6,23 @@
  * Return: the resulting string;
  */
 
-char *leet(char *str)
+char *leet(char *s)
 {
-	int a, b;
+	int i, k;
 
-	char *x = "aAeEoOtTlL";
-	char *z = "4433007711";
+	char *a = "aAeEoOtTlL";
+	char *b = "4433007711";
 
-	for (a = 0; str[a] != '\0'; a++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (b = 0; b < 10; b++)
+		for (j = 0; k < 10; k++)
 		{
-			if (str[a] == x[b])
+			if (s[i] == a[k])
 			{
-				str[a] = z[b];
+				s[i] = b[k];
 			}
 		}
 	}
-	return (str);
+
+	return (s);
 }
