@@ -2,7 +2,7 @@
 
 /**
  * leet - function that switch char to letter
- * @str : array
+ * @s : array
  * Return: the resulting string;
  */
 
