@@ -1,36 +1,6 @@
 #include "main.h"
 
 /**
- * lower - determines that characters are lower case
- * @c  : charater to be determined
- * Return: 1 if true 0 is false
- **/
-
-int lower(char c)
-{
-	return (c >= 97 && c <= 122);
-}
-
-/**
- * isdelimiter - function that checks if ascii is a delimiter
- * @c: charcter to be determined
- * Return: return is 1 if true 0 is false
-*/
-
-int isdelimiter(char c)
-{
-	int i;
-	char delimiter[] = ",;.!?\"\n\t(){}";
-
-	for (i = 0; i < 12; i++)
-	{	
-		if (c == delimiter[i])
-			return (1);
-	}
-	return (0);
-}
-
-/**
  * cap_string - concatenates two strings
  * @s  : array
  * Return: a pointer to the resulting string
@@ -38,21 +8,27 @@ int isdelimiter(char c)
 
 char *cap_string(char *s)
 {
-	char *p = s;
-	int founddelimit = 1;
 
-	while (*s)
+	int a, b;
+	char str[] = {'\t', '\n', ' ', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+
+
+	for (a = 0, s[a] != '\0'; a++)
 	{
-		if (isdelimiter(*s))
-			founddelimit = 1;
-		else if (lower(*s) && founddelimit)
+		if (a = 0 && s[a] >= 'a' && s[a] <= 'z')
 		{
-			*s -= 32;
-			founddelimit = 0;
+			s[a] -= 32;
 		}
-		else
-			founddelimit = 0;
-		s++;
+		for (b = 0; str[b] < 13, b++)
+		{
+			if (s[a] == str[b])
+			{
+				if (s[a+ 1] >= 'a' && s[a+1]<= 'z')
+				{
+					s[a + 1] -= 32;
+				}
+			}
+		}
 	}
-	return (p);
+	return (s);
 }
