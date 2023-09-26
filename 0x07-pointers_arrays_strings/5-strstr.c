@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strstr - unction finds the first occurrence of the substring
- * @haystack : char 
+ * @haystack : char
  * @needle : char
  */
 
@@ -10,12 +11,19 @@ char *_strstr(char *haystack, char *needle)
 {
 	int a, b;
 
+	b = 0;
+
 	for (a = 0; haystack[a] != '\0'; a++)
 	{
-		for (b = 0; needle[b] != '\0'; b++)
+		if (haystack[a] == needle[b])
 		{
-			if (haystack[a] == needle [b])
-				reutn &haystack[a]
+			if (needle[b + 1] == '\0')
+			{
+				printf("%s", needle);
+			}
+			b++;
 		}
+		else
+			b = 0;
 	}
 }
