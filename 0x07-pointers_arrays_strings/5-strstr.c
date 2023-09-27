@@ -19,11 +19,12 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (needle[b + 1] == '\0')
 			{
-				printf("%s", needle);
+				return (needle);
 			}
 			b++;
 		}
 		else
 			b = 0;
 	}
+	return ("");
 }
