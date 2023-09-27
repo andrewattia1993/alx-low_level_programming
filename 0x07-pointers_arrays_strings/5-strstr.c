@@ -6,33 +6,19 @@
  * @haystack : char
  * @needle : char
  */
-int con(char *a, char *b)
-{
-	while (*b && *b == *a)
-	{
-		b++;
-		a++;
-	}
-
-	if (*b == '\0')
-		return (1);
-	else
-		return (0);
-}
-
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
-	{
-		if ((*haystack == *needle && con(haystack, needle) == 1) || !*needle)
-		{
-			return (haystack);
-		}
-		else
-		{
-			haystack++;
-		}
-	}
-	return ("");
-}
+	int i, j;
 
+	for (i = 0; haystack[i] != '\0'; i++)
+	{
+		for (j = 0; needle[j] != '\0'; j++)
+		{
+			if (haystack[i + j] != needle[j])
+				break;
+		}
+		if (!needle[j])
+			return (&haystack[i]);
+	}
+	return (NULL);
+}
