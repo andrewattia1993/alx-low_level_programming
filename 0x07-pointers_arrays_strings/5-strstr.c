@@ -6,6 +6,19 @@
  * @haystack : char
  * @needle : char
  */
+int con(char *a, char *b)
+{
+	while (*b && *b == *a)
+	{
+		b++;
+		a++;
+	}
+
+	if (*b == '\0')
+		return (1);
+	else
+		return (0);
+}
 
 char *_strstr(char *haystack, char *needle)
 {
@@ -22,16 +35,4 @@ char *_strstr(char *haystack, char *needle)
 	}
 	return ("");
 }
-int con(char *a, char *b)
-{
-	while (*b && *b == *a)
-	{
-		b++;
-		a++;
-	}
 
-	if (*b == '\0')
-		return (1);
-	else
-		return (0);
-}
