@@ -5,6 +5,7 @@
  * _strstr - unction finds the first occurrence of the substring
  * @haystack : char
  * @needle : char
+ * Return: needle is the return
  */
 char *_strstr(char *haystack, char *needle)
 {
