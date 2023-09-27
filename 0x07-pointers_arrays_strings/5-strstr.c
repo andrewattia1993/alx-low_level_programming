@@ -9,22 +9,16 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int a, b;
-
-	b = 0;
-
-	for (a = 0; haystack[a] != '\0'; a++)
+	while (*haystack)
 	{
-		if (haystack[a] == needle[b])
+		if ((*haystack == *needle && coincidence(haystack, needle) == 1) || !*needle)
 		{
-			if (needle[b + 1] == '\0')
-			{
-				return (needle);
-			}
-			b++;
+			return (haystack);
 		}
 		else
-			b = 0;
+		{
+			haystack++;
+		}
 	}
 	return ("");
 }
