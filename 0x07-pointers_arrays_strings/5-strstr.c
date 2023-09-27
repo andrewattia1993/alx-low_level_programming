@@ -11,7 +11,7 @@ char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack)
 	{
-		if ((*haystack == *needle && coincidence(haystack, needle) == 1) || !*needle)
+		if ((*haystack == *needle && con(haystack, needle) == 1) || !*needle)
 		{
 			return (haystack);
 		}
@@ -21,4 +21,17 @@ char *_strstr(char *haystack, char *needle)
 		}
 	}
 	return ("");
+}
+int con(char *a, char *b)
+{
+	while (*b && *b == *a)
+	{
+		b++;
+		a++;
+	}
+
+	if (*b == '\0')
+		return (1);
+	else
+		return (0);
 }
