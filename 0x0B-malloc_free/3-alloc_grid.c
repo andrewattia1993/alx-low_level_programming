@@ -4,9 +4,9 @@
 
 /**
  * alloc_grid - function to a double array
- * @width - width of array
- * @height - height of array 
- * Return: depends on input 
+ * @width : width of array
+ * @height : height of array
+ * Return: depends on input
  */
 
 int **alloc_grid(int width, int height)
