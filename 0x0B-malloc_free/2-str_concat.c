@@ -13,13 +13,27 @@ char *str_concat(char *s1, char *s2)
 	char *neu;
 	int size1, size2, a;
 
-	for (size1 = 0; s1[size1] != '\0'; size1++)
+	if (s1 == NULL)
 	{
+		size1 = 0;
 	}
-	for (size2 = 0; s2[size2] != '\0'; size2++)
+	else
 	{
+		for (size1 = 0; s1[size1] != '\0'; size1++)
+		{
+		}
 	}
 
+	if (s2 == NULL)
+	{
+		size2 = 0;
+	}
+	else
+	{
+		for (size2 = 0; s2[size2] != '\0'; size2++)
+		{
+		}
+	}
 	neu = (char *) malloc(size1 + size2 + 1);
 	if (neu == NULL)
 		return (NULL);
