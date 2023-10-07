@@ -1,17 +1,30 @@
 #include "main.h"
 
 /**
- * _strlen - check the code.
- * @s: char to be enetered
- * Return: Always 0.
+ * *_strcpy - copies the string pointed to by src
+ * including the terminating null byte (\0)
+ * to the buffer pointed to by dest
+ * @dest: pointer to the buffer in which we copy the string
+ * @src: string to be copied
+ *
+ * Return: the pointer to dest
  */
-
-int _strlen(char *s)
+char *_strcpy(char *dest, char *src)
 {
-	int c;
+	int len, a;
 
-	for (c = 0; *s != '\0'; s++)
-		c++;
+	len = 0;
 
-	return (c);
+	while (src[len] != '\0')
+	{
+		len++;
+	}
+
+	for (a = 0; a < len; a++)
+	{
+		dest[a] = src[a];
+	}
+	dest[a] = '\0';
+
+	return (dest);
 }
