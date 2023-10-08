@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 /**
  * main - the name of the program
@@ -11,7 +12,7 @@
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int add = 0, i;
+	int add = 0, i, l;
 
 	if (argc < 2)
 	{
@@ -21,15 +22,18 @@ int main(int argc, char *argv[] __attribute__((unused)))
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) == 0)
+		const int len = strlen(argv[i]);
+
+		for (l = 0; l < len; l++)
 		{
-			printf("Error\n");
-			return (1);
+
+			if (!isdigit(argv[i][l]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			add += atoi(argv[i]);
-		}
+		add += atoi(argv[i]);
 	}
 	printf("%d\n", add);
 	return (0);
