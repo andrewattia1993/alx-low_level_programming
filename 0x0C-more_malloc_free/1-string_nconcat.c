@@ -12,15 +12,15 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	int i, j, lens1, lens2;
+	int i, lens1, lens2;
 
 	if (s1 == NULL)
 	{
-		s1 = ""
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		s2 == ""
+		s2 = "";
 	}
 
 	for (lens1 = 0; lens1 != '\0'; lens1++)
@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (i = 0; i < lens2; i++)
 	{
-		str[lens1 + a] = s2[i];
+		str[lens1 + i] = s2[i];
 	}
 	str[lens1 + lens2 + 1] = '\0';
 	return (str);
