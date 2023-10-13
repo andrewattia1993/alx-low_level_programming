@@ -7,18 +7,12 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int i;
+	unsigned int l;
 	va_list list;
-
-	if (!n)
-	{
-		printf("\n");
-		return;
-	}
 
 	va_start(list, n);
 
-	for (i = 0; i < n; i++)
+	for (l = 0; l < n; l++)
 	{
 		if (!separator)
 			printf("%d", va_arg(list, int));
