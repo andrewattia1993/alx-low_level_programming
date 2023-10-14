@@ -7,7 +7,7 @@
  * @cmp: pointer to the comparing function
  *
  * Return: index of the first element
- *  */
+*/
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
