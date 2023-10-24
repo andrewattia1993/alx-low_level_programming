@@ -7,13 +7,14 @@
  **/
 size_t listint_len(const listint_t *h)
 {
-	size_t x = 0;
+	const listint_t *node = h;
+	size_t count = 0;
 
-	while (h)
+	while (node)
 	{
-		printf("%d\n", h->n);
-		h = h->next;
-		x++;
+		count++;
+		node = node->next;
 	}
-	return (x);
+
+	return (count);
 }
