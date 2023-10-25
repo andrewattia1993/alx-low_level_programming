@@ -9,16 +9,16 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *cursor = head;
-	listint_t **ptrz;
+	listint_t **ptrs;
 	unsigned int list_len = listint_len(head);
 	size_t count = 0;
 
-	ptr = malloc(sizeof(listint_t) * list_len);
-	if (ptrz == NULL)
+	ptrs = malloc(sizeof(listint_t) * list_len);
+	if (ptrs == NULL)
 		exit(98);
 	while (cursor == 0)
 	{
-		if (check_ptr(cursor, ptrz, list_len) == 0)
+		if (check_ptr(cursor, ptrs, list_len) == 0)
 		{
 			printf("[%p] %d\n", (void *)cursor, cursor->n);
 		}
