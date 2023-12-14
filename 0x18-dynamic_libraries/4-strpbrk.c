@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strpbrk - a function that gets the length of a prefix substring
+ * _strbrk -  a function that gets the length of a prefix substring
  * @s: char
  * @accept : char
  * Return: length
